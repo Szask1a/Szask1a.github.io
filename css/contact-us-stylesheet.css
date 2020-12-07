@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+	line-height: 1.4;
+	background-color: #8fcfd1;
+	position: absolute;
+}
+
+.contact-info {
+	margin-right: 250px;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container .box {
+	text-align: center;
+}
+
+.container .box .icon .fa {
+	font-size: 80px;
+	cursor: pointer;
+}
+
+.container .box .icon h3,
+.container .box .icon h4 {
+	position: relative;
+	font-weight: 400px;
+	overflow: hidden;
+	margin: 0;
+	padding: 2px 5px;
+	font-size: 24px;
+	transition-delay: 0.3333s;
+	color: transparent;
+}
+
+.container .box .fa:hover ~ h3,
+.container .box .fa:hover ~ h4 {
+	color: #000;
+}
+
+.container .box .icon h4 {
+	font-weight: 600px;
+	margin: 5px 0;
+	font-style: 30px;
+}
+
+.container .box .icon h3:before,
+.container .box .icon h4:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%; 
+	background: #f9d56e;
+	transition: 1s;
+}
+
+.container .box .icon h4:before {
+	left: initial;
+	right: 100%;
+	background: #e8505b;
+}
+
+.container .box .fa:hover ~ h3:before,
+.container .box .fa:hover ~ h4:before {
+	left: -100%;
+}
+
+.container .box .fa:hover ~ h4:before {
+	left: initial;
+	right: -100%;
+}
+
+.title h2 {
+	font-size: 50px;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	position: relative;
+	margin-top: 150px;
+	margin-bottom: 100px;
+	margin-left: 250px;
+	z-index: -1;
+}
+
+.label {
+  font-family: 'Poppins';
+  font-size: 1.3em;
+  font-weight: 900;
+  letter-spacing: -1px;
+  position: absolute;
+  /*font-size: 40px;*/
+  margin-top: 20px;
+  margin-left: -320px;
+  margin-right: 1000px;
+  z-index: -1; }
+
+#blend {
+  color: #e8505b; }
+
+#studio {
+  color: #f9d56e; }
