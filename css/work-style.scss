@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+// SCSS mixin to generate the final CSS code for the slider
+
+// Params:
+// - $cssClass: CSS class to match the slider container
+// - $slider-length: Length (width or height) of slider container
+// - $slider-center: If slider should be centered
+// - $slide-width: Fixed width for each slide
+// - $slide-height: Fixed height for each slide
+// - $vertical: If slider should be vertical (true), or horizontal (false)
+// - $reverse: If slider should have reversed slides (first items at the end)
+// - $debug: Show helpful background colors to help debugging
+
+@mixin ms(
+  // Default values
+  $cssClass: 'ms-container',
+  $slider-length: 400px,
+  $slider-center: false,
+  $slide-width: 90px,
+  $slide-height: 90px,
+  $vertical: false,
+  $reverse: false,
+  $debug: false
+) {
+  // Slider container
+  .#{$cssClass} {
+    position: relative;
+    @if $slider-center {
+      margin: 0 auto;
+    }
+    overflow: hidden;
+    @if $debug {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @if $debug {
+      // Just for testing the current slide position (centered)
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 100%;
+      }
+    }
+
+    @if $vertical {
+      // Styles for vertical slider
+      &.ms-container--vertical {
+        width: $slide-width;
+        height: $slider-length;
+        max-height: 100%;
+  
+        @if $debug {
+          &:before {
+            left: 0;
+            top: calc(50% - #{$slide-height / 2});
+            width: 100%;
+            height: $slide-height;
+          }
+        }
+  
+        // Centering slider track vertically, to get current slide centered
+        .ms-track {
+          flex-direction: column;
+          top: calc(50% - #{$slide-height / 2});
+        }
+  
+        @if $reverse {
+          // Reverse styles
+          &.ms-container--reverse .ms-track {
+            flex-direction: column-reverse;
+            top: auto;
+            bottom: calc(50% - #{$slide-height / 2});
+          }
+        }
+  
+        // Positioning slides vertically
+        .ms-slide {
+          display: flex;
+        }
+      }
+    } @else {
+      // Styles for horizontal slider
+      &.ms-container--horizontal {
+        width: $slider-length;
+        height: $slide-height;
+        max-width: 100%;
+  
+        @if $debug {
+          &:before {
+            left: calc(50% - #{$slide-width / 2});
+            top: 0;
+            width: $slide-width;
+            height: 100%;
+          }
+        }
+  
+        // Centering slider track horizontally, to get current slide centered
+        .ms-track {
+          left: calc(50% - #{$slide-width / 2});
+        }
+  
+        @if $reverse {
+          // Reverse styles
+          &.ms-container--reverse .ms-track {
+            flex-direction: row-reverse;
+            left: auto;
+            right: calc(50% - #{$slide-width / 2});
+          }
+        }
+  
+        // Positioning slides horizontally
+        .ms-slide {
+          display: inline-flex;
+        }
+      }
+    }
+  
+    // Slider track
+    .ms-track {
+      display: flex;
+      position: absolute;
+      white-space: nowrap;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  
+    // Slides
+    .ms-slide {
+      align-items: center;
+      justify-content: center;
+      width: $slide-width;
+      height: $slide-height;
+      user-select: none;
+  
+      @if $debug {
+        // A testing backgrounds for slides
+        &:nth-child(2n) {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+        &:nth-child(2n + 1) {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+
+// Images
+
+$ms-images-slide-width: 700px;
+$ms-images-slide-height: 400px;
+
+// SCSS mixin to generate the final CSS code for the slider
+@include ms(
+  $cssClass: 'ms--images', // CSS class to match the slider container
+  $slider-length: 100%,    // The slider container will have full width
+  $slider-center: false,   // Don't need to center it, as it is full width
+  $slide-width: $ms-images-slide-width,   // Fixed width for each slide
+  $slide-height: $ms-images-slide-height, // Fixed height for each slide
+  $vertical: false, // The slider should be horizontal
+  $reverse: false,  // Normal order
+  $debug: false     // No debbug backgrounds in production
+);
+
+// Custom styles for images slider
+.ms--images {
+  left: calc(50% - #{$ms-images-slide-width / 2 - 70px});
+
+  &.ms-container--horizontal .ms-track {
+    left: -70px;
+  }
+
+  // Slides images
+  .ms-slide {
+    &:nth-child(1) .ms-slide__image {
+      background-image: url('../images/Zi-Yoshou.jpg');
+    }
+    &:nth-child(2) .ms-slide__image {
+      background-image: url('../images/tia.jpg');
+    }
+    &:nth-child(3) .ms-slide__image {
+      background-image: url('../images/samidare.jpg');
+    }
+    &:nth-child(4) .ms-slide__image {
+      background-image: url('../images/defjam.PNG');
+    }
+  }
+
+  .ms-slide__image-container {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .ms-slide__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+}
+
+
+// Numbers
+
+$ms-numbers-slide-width: 240px;
+$ms-numbers-slide-height: 240px;
+
+@include ms(
+  $cssClass: 'ms--numbers',
+  $slider-length: $ms-numbers-slide-width,
+  $slider-center: false,
+  $slide-width: $ms-numbers-slide-width,
+  $slide-height: $ms-numbers-slide-height,
+  $vertical: false,
+  $reverse: false,
+  $debug: false
+);
+
+.ms--numbers {
+  position: absolute;
+  left: calc(50% - #{$ms-images-slide-width / 2 + 30px});
+  top: calc(50% - #{$ms-images-slide-height / 2 + $ms-numbers-slide-height / 2 - 20px});
+  z-index: 0;
+  pointer-events: none;
+
+  .ms-slide {
+    font-family: 'Poppins', sans-serif;
+    font-size: 9em;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+
+// Titles
+
+$ms-titles-slide-width: 400px;
+$ms-titles-slide-height: 170px;
+
+@include ms(
+  $cssClass: 'ms--titles',
+  $slider-length: $ms-titles-slide-height,
+  $slider-center: false,
+  $slide-width: $ms-titles-slide-width,
+  $slide-height: $ms-titles-slide-height,
+  $vertical: true,
+  $reverse: true,
+  $debug: false
+);
+
+.ms--titles {
+  position: absolute;
+  left: calc(50% - #{$ms-images-slide-width / 2 + 70px});
+  top: calc(50% - #{$ms-titles-slide-height / 2});
+  z-index: 1;
+  pointer-events: none;
+
+  .ms-track {
+    white-space: normal;
+  }
+
+  .ms-slide {
+    font-size: 3.3em;
+    font-weight: 600;
+
+    h3 {
+      margin: 0;
+      text-shadow: 1px 1px 2px black;
+    }
+  }
+}
+
+
+// Links
+
+$ms-links-slide-width: 120px;
+$ms-links-slide-height: 60px;
+
+@include ms(
+  $cssClass: 'ms--links',
+  $slider-length: $ms-links-slide-height,
+  $slider-center: false,
+  $slide-width: $ms-links-slide-width,
+  $slide-height: $ms-links-slide-height,
+  $vertical: true,
+  $reverse: false,
+  $debug: false
+);
+
+.ms--links {
+  position: absolute;
+  left: calc(50% - #{$ms-images-slide-width / 2 + 70px});
+  top: calc(50% + #{$ms-titles-slide-height / 2 + 20px});
+  z-index: 1;
+
+  .ms-track {
+    white-space: normal;
+  }
+
+  .ms-slide__link {
+    font-weight: 600;
+    padding: 5px 0 8px;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+  }
+}
+
+
+// Pagination
+
+.pagination {
+  display: flex;
+  position: absolute;
+  left: calc(50% - #{$ms-images-slide-width / 2 + 70px});
+  top: calc(100%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+
+  &__button {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: calc(50% - 1px);
+      width: 100%;
+      box-shadow: 0 0.2px 0 #0B0D14;
+    }
+    
+    &:before {
+      height: 2px;
+      background-color: #f9d56e;
+    }
+    
+    &:after {
+      height: 3px;
+      background-color: #14b1ab;
+      opacity: 0;
+      transition: 0.5s opacity;
+    }
+  }
+}
+
+.pagination__item--active .pagination__button:after {
+  opacity: 1;
+}
+
+
+// Responsive styles
+
+@media screen and (max-width: 860px) {
+  .ms--numbers {
+    left: calc(50% - #{$ms-numbers-slide-width / 2});
+  }
+
+  .ms--titles {
+    left: calc(50% - #{$ms-titles-slide-width / 2});
+    top: calc(50% - #{$ms-titles-slide-height / 2 + 50px});
+    text-align: center;
+  }
+
+  .ms--links {
+    left: calc(50% - #{$ms-links-slide-width / 2});
+    top: calc(50% + #{$ms-links-slide-height / 2 + 50px});
+  }
+
+  .pagination {
+    left: 50%;
+    top: calc(100% - 50px);
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ms--images {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ms--titles {
+    .ms-slide {
+      transform: scale(0.8);
+    }
+  }
+}
+
+
+$color-primary: rgba(255, 255, 255, 1);
+$color-secondary: rgba(255, 255, 255, 0.5);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-primary;
+  background-color: #e8505b;
+  overflow: hidden;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e8505b;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -150%;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #f9d56e;
+
+  span {
+    display: inline-block;
+    //transform: translateY(4px) rotate(180deg);
+    pointer-events: none;
+    color: #14b1ab;
+  }
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__menu__list, .footer__menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu__link {
+  margin-left: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer__menu__link {
+  margin-left: 50px;
+  color: $color-secondary;
+}
+
+.sliders-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+
+// Hide header menu and footer in small screens
+
+@media screen and (max-width: 860px) {
+  .header__menu, .footer {
+    display: none;
+  }
+}
