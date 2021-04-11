@@ -8,7 +8,7 @@
     var msNumbers = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--numbers',
-        range: [1, 4],
+        range: [1, 6],
         rangeContent: function (i) {
             return '0' + i;
         },
@@ -24,7 +24,9 @@
         'Zi Yoshou',
         'Commision: 1',
         'Samidare',
-        'Def Jam'
+        'Def Jam',
+        'COBTS',
+        '4Cast'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
