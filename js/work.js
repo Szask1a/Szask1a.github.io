@@ -59,7 +59,7 @@
         cssClass: 'ms--links',
         range: [0, 5],
         rangeContent: function () {
-            return '<a class="ms-slide__link" href="+links[]+">View Case</a>';
+            return '<a class="ms-slide__link" href=""+links[]+>View Case</a>';
         },
         vertical: true,
         interactive: false
