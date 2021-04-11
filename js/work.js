@@ -31,7 +31,7 @@
     var msTitles = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--titles',
-        range: [0, 3],
+        range: [0, 5],
         rangeContent: function (i) {
             return '<h3>'+ titles[i] +'</h3>';
         },
@@ -49,13 +49,15 @@
         'Zi Yoshou',
         'Commision: 1',
         'https://dribbble.com/shots/13932161-Samidare',
-        'Def Jam'
+        'Def Jam',
+        'COBTS',
+        '4Cast'
     ];
 
     var msLinks = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--links',
-        range: [0, 3],
+        range: [0, 5],
         rangeContent: function () {
             return '<a class="ms-slide__link" href="https://dribbble.com/ab1sheaka">View Case</a>';
         },
@@ -74,7 +76,7 @@
         // CSS class to reference the slider
         cssClass: 'ms--images',
         // Generate the 4 slides required
-        range: [0, 3],
+        range: [0, 5],
         rangeContent: function () {
             return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>';
         },
