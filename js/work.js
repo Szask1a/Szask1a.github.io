@@ -46,20 +46,20 @@
     // Initializing the links slider
 
     var links = [
-        'https://www.behance.net/gallery/102425127/Bliss',
-        'https://www.behance.net/gallery/102425217/Commission-Arekusa',
-        'https://dribbble.com/shots/13932161-Samidare',
-        'https://www.behance.net/gallery/102424999/Swiss-Art-1',
-        'https://github.com/Szask1a/Inventory-Manager',
-        'https://github.com/Szask1a/fourcast'
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425127/Bliss">View Case</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425217/Commission-Arekusa">View Case</a>',
+        '<a class="ms-slide__link" href="https://dribbble.com/shots/13932161-Samidare">View Case</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102424999/Swiss-Art-1">View Case</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View Case</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View Case</a>'
     ];
 
     var msLinks = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--links',
         range: [0, 5],
-        rangeContent: function () {
-            return '<a class="ms-slide__link" href=""+links[]+>View Case</a>';
+        rangeContent: function (i) {
+            return links[i];
         },
         vertical: true,
         interactive: false
