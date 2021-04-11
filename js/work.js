@@ -59,7 +59,7 @@
         cssClass: 'ms--links',
         range: [0, 5],
         rangeContent: function (i) {
-            return links[i];
+            return 'links[i]';
         },
         vertical: true,
         interactive: false
