@@ -46,12 +46,12 @@
     // Initializing the links slider
 
     var links = [
-        'Zi Yoshou',
-        'Commision: 1',
+        'https://www.behance.net/gallery/102425127/Bliss',
+        'https://www.behance.net/gallery/102425217/Commission-Arekusa',
         'https://dribbble.com/shots/13932161-Samidare',
-        'Def Jam',
-        'COBTS',
-        '4Cast'
+        'https://www.behance.net/gallery/102424999/Swiss-Art-1',
+        'https://github.com/Szask1a/Inventory-Manager',
+        'https://github.com/Szask1a/fourcast'
     ];
 
     var msLinks = new MomentumSlider({
