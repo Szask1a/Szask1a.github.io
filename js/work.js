@@ -59,7 +59,7 @@
         cssClass: 'ms--links',
         range: [0, 5],
         rangeContent: function (i) {
-            return '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425127/Bliss">View Case</a>';
+            return links[i];
         },
         vertical: true,
         interactive: false
