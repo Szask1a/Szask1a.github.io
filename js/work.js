@@ -56,7 +56,7 @@
         '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View App</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View App</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View App</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/107993977/Nothing-but-a-donut">View Design</a>'
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/107993977/Nothing-but-a-donut">View Design</a>',
         '<a class="ms-slide__link" href="https://www.behance.net/gallery/111754195/KABUK1">View UI</a>'
     ];
 
