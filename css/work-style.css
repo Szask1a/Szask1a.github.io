@@ -44,8 +44,6 @@
     background-image: url("../images/Capture.PNG"); }
 .ms--images .ms-slide:nth-child(8) .ms-slide__image {
     background-image: url("../images/release.jpg"); }
-.ms--images .ms-slide:nth-child(9) .ms-slide__image {
-    background-image: url("../images/Landing.jpg"); }
   .ms--images .ms-slide__image-container {
     width: 80%;
     height: 80%;
