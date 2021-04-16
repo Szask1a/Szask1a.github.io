@@ -40,6 +40,10 @@
     background-image: url("../images/cobts1.jpg"); }
 .ms--images .ms-slide:nth-child(6) .ms-slide__image {
     background-image: url("../images/fourcast.jpg"); }
+.ms--images .ms-slide:nth-child(7) .ms-slide__image {
+    background-image: url("../images/fourcast.jpg"); }
+.ms--images .ms-slide:nth-child(8) .ms-slide__image {
+    background-image: url("../images/Capture.PNG"); }
   .ms--images .ms-slide__image-container {
     width: 80%;
     height: 80%;
