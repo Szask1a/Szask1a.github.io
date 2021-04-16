@@ -8,7 +8,7 @@
     var msNumbers = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--numbers',
-        range: [1, 8],
+        range: [1, 9],
         rangeContent: function (i) {
             return '0' + i;
         },
@@ -28,12 +28,13 @@
         'COBTS',
         '4Cast',
         'Inventory Manager',
-        '3D Donut'
+        '3D Donut',
+        'Store UI'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--titles',
-        range: [0, 7],
+        range: [0, 8],
         rangeContent: function (i) {
             return '<h3>'+ titles[i] +'</h3>';
         },
@@ -56,12 +57,13 @@
         '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View App</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View App</a>',
         '<a class="ms-slide__link" href="https://www.behance.net/gallery/107993977/Nothing-but-a-donut">View Design</a>'
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/111754195/KABUK1">View UI</a>'
     ];
 
     var msLinks = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--links',
-        range: [0, 7],
+        range: [0, 8],
         rangeContent: function (i) {
             return links[i];
         },
@@ -80,7 +82,7 @@
         // CSS class to reference the slider
         cssClass: 'ms--images',
         // Generate the 4 slides required
-        range: [0, 7],
+        range: [0, 8],
         rangeContent: function () {
             return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>';
         },
