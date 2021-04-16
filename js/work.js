@@ -8,7 +8,7 @@
     var msNumbers = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--numbers',
-        range: [1, 6],
+        range: [1, 8],
         rangeContent: function (i) {
             return '0' + i;
         },
@@ -21,17 +21,19 @@
 
     // Initializing the titles slider
     var titles = [
-        'Zi Yoshou',
-        'Commision: 1',
-        'Samidare',
-        'Def Jam',
-        'COBTS \n Booking App',
-        '4Cast \n Weather App'
+        'Flatart 01',
+        'Artwork: Anime',
+        'Flatart 02',
+        'Swiss Style',
+        'COBTS',
+        '4Cast',
+        'Inventory Manager',
+        '3D Donut'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--titles',
-        range: [0, 5],
+        range: [0, 7],
         rangeContent: function (i) {
             return '<h3>'+ titles[i] +'</h3>';
         },
@@ -46,18 +48,20 @@
     // Initializing the links slider
 
     var links = [
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425127/Bliss">View Case</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425217/Commission-Arekusa">View Case</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425127/Bliss">View Artwork</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425217/Commission-Arekusa">View Artwork</a>',
         '<a class="ms-slide__link" href="https://dribbble.com/shots/13932161-Samidare">View Case</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102424999/Swiss-Art-1">View Case</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View Case</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View Case</a>'
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102424999/Swiss-Art-1">View Artwork</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View App</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View App</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View App</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/107993977/Nothing-but-a-donut">View Design</a>'
     ];
 
     var msLinks = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--links',
-        range: [0, 5],
+        range: [0, 7],
         rangeContent: function (i) {
             return links[i];
         },
