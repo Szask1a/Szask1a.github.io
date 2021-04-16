@@ -25,8 +25,8 @@
         'Commision: 1',
         'Samidare',
         'Def Jam',
-        'COBTS',
-        '4Cast'
+        'COBTS \n Booking App',
+        '4Cast \n Weather App'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
