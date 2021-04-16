@@ -50,7 +50,7 @@
     var links = [
         '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425127/Bliss">View Artwork</a>',
         '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425217/Commission-Arekusa">View Artwork</a>',
-        '<a class="ms-slide__link" href="https://dribbble.com/shots/13932161-Samidare">View Case</a>',
+        '<a class="ms-slide__link" href="https://dribbble.com/shots/13932161-Samidare">View Artwork</a>',
         '<a class="ms-slide__link" href="https://www.behance.net/gallery/102424999/Swiss-Art-1">View Artwork</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View App</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View App</a>',
