@@ -51,7 +51,7 @@
     var links = [
         '<a class="ms-slide__link" href="https://sask1a.itch.io/firing-range">View Game</a>',
         '<a class="ms-slide__link" href="https://sask1a.itch.io/landscape-auto-material">View Assets</a>',
-        '<a class="ms-slide__link" href="https://dribbble.com/shots/13932161-Samidare">View Artwork</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/saskiaaa">View Artwork</a>',
         '<a class="ms-slide__link" href="https://sask1a.itch.io/dungeon-master">View Game</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View App</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View App</a>',
