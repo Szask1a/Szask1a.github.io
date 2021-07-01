@@ -21,15 +21,15 @@
 
     // Initializing the titles slider
     var titles = [
-        'Flatart 01',
-        'Artwork: Anime',
-        'Flatart 02',
-        'Swiss Style',
+        'Level Designs',
+        'Game Assets',
+        'Artworks',
+        'Games',
         'COBTS',
         '4Cast',
         'Inventory Manager',
         '3D Donut',
-        'Store UI'
+        'UI/UX'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
@@ -49,10 +49,10 @@
     // Initializing the links slider
 
     var links = [
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425127/Bliss">View Artwork</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102425217/Commission-Arekusa">View Artwork</a>',
+        '<a class="ms-slide__link" href="https://sask1a.itch.io/firing-range">View Game</a>',
+        '<a class="ms-slide__link" href="https://sask1a.itch.io/landscape-auto-material">View Assets</a>',
         '<a class="ms-slide__link" href="https://dribbble.com/shots/13932161-Samidare">View Artwork</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/102424999/Swiss-Art-1">View Artwork</a>',
+        '<a class="ms-slide__link" href="https://sask1a.itch.io/dungeon-master">View Game</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View App</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View App</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View App</a>',
