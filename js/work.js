@@ -52,7 +52,7 @@
         '<a class="ms-slide__link" href="https://sask1a.itch.io/firing-range">View Demo</a>',
         '<a class="ms-slide__link" href="https://sask1a.itch.io/landscape-auto-material">View Demo</a>',
         '<a class="ms-slide__link" href="https://www.behance.net/saskiaaa">View Demo</a>',
-        '<a class="ms-slide__link" href="https://sask1a.itch.io/dungeon-master">View Demo</a>',
+        '<a class="ms-slide__link" href="https://youtu.be/gyi5vCFBpc4">View Demo</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View Demo</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View Demo</a>',
         '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View Demo</a>',
