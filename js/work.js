@@ -21,15 +21,15 @@
 
     // Initializing the titles slider
     var titles = [
-        'Level Designs',
-        'Game Assets',
-        'Artworks',
-        'Games',
-        'COBTS',
-        '4Cast',
-        'Inventory Manager',
-        '3D Donut',
-        'UI/UX'
+        'Shooting Range',
+        'Advanced Locomotion',
+        'Stealth AI',
+        'Follower AI',
+        'Climber',
+        'WIP',
+        'WIP',
+        'WIP',
+        'WIP'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
@@ -49,15 +49,15 @@
     // Initializing the links slider
 
     var links = [
-        '<a class="ms-slide__link" href="https://sask1a.itch.io/firing-range">View Game</a>',
-        '<a class="ms-slide__link" href="https://sask1a.itch.io/landscape-auto-material">View Assets</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/saskiaaa">View Artwork</a>',
-        '<a class="ms-slide__link" href="https://sask1a.itch.io/dungeon-master">View Game</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View App</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View App</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View App</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/107993977/Nothing-but-a-donut">View Design</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/111754195/KABUK1">View UI</a>'
+        '<a class="ms-slide__link" href="https://sask1a.itch.io/firing-range">View Demo</a>',
+        '<a class="ms-slide__link" href="https://sask1a.itch.io/landscape-auto-material">View Demo</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/saskiaaa">View Demo</a>',
+        '<a class="ms-slide__link" href="https://sask1a.itch.io/dungeon-master">View Demo</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View Demo</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View Demo</a>',
+        '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View Demo</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/107993977/Nothing-but-a-donut">View Demo</a>',
+        '<a class="ms-slide__link" href="https://www.behance.net/gallery/111754195/KABUK1">View Demo</a>'
     ];
 
     var msLinks = new MomentumSlider({
