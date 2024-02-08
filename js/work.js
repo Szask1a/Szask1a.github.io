@@ -22,10 +22,10 @@
     // Initializing the titles slider
     var titles = [
         'Shooting Range',
-        'Advanced Locomotion',
-        'Stealth AI',
+        'Driving Simulator',
+        'Artworks',
         'Follower AI',
-        'Climber',
+        'WIP',
         'WIP',
         'WIP',
         'WIP',
@@ -50,14 +50,14 @@
 
     var links = [
         '<a class="ms-slide__link" href="https://sask1a.itch.io/firing-range">View Demo</a>',
-        '<a class="ms-slide__link" href="https://sask1a.itch.io/landscape-auto-material">View Demo</a>',
+        '<a class="ms-slide__link" href="https://youtu.be/8Ks-M0PYzVg">View Demo</a>',
         '<a class="ms-slide__link" href="https://www.behance.net/saskiaaa">View Demo</a>',
         '<a class="ms-slide__link" href="https://youtu.be/gyi5vCFBpc4">View Demo</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/COBTS">View Demo</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/fourcast">View Demo</a>',
-        '<a class="ms-slide__link" href="https://github.com/Szask1a/Inventory-Manager">View Demo</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/107993977/Nothing-but-a-donut">View Demo</a>',
-        '<a class="ms-slide__link" href="https://www.behance.net/gallery/111754195/KABUK1">View Demo</a>'
+        '<a class="ms-slide__link" href="https://szask1a.github.io/html/work.html">View Demo</a>',
+        '<a class="ms-slide__link" href="https://szask1a.github.io/html/work.html">View Demo</a>',
+        '<a class="ms-slide__link" href="https://szask1a.github.io/html/work.html">View Demo</a>',
+        '<a class="ms-slide__link" href="https://szask1a.github.io/html/work.html">View Demo</a>',
+        '<a class="ms-slide__link" href="https://szask1a.github.io/html/work.html">View Demo</a>'
     ];
 
     var msLinks = new MomentumSlider({
